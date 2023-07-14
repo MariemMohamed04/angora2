@@ -1,0 +1,106 @@
+<html>
+
+<head>
+  <title>Personal Data</title>
+</head>
+
+<body style="background-color: #01081A;">
+  <form action="">
+    <fieldset style="background-color: #01081A; border-color: #7654BF;">
+      <legend style="background-color: #7654BF;">Personal Data</legend>
+      <br>
+      <fieldset style="background-color: #D81D3C; border-color: #7654BF;">
+        <legend style="background-color: #7654BF;">
+          <br>
+          <br>
+          <b>YourName</b>
+          <br>
+          <br>
+          <br>
+        </legend>
+        <br>
+        <br>
+        <form action="">
+          <table>
+            <tr>
+              <td>
+                <label for="fname">First Name</label>
+              </td>
+              <td style="color: #e5a4ca;">:</td>
+              <td>
+                <input type="text" id="fname" name="fname" placeholder="First Name" required>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="sname">Second Name</label></td>
+              <td style="color: #e5a4ca;">:</td>
+              <td><input type="text" id="sname" name="sname" placeholder="Second Name" required></td>
+            </tr>
+          </table>
+        </form>
+      </fieldset>
+      <br>
+      <br>
+      <table>
+        <tr>
+          <td><label for="phone" style="color: #e5a4ca;">Your Phone</label></td>
+          <td style="color: #e5a4ca;">:</td>
+          <td><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></td>
+        </tr>
+        <tr>
+          <td><label for="email" style="color: #e5a4ca;">Email</label></td>
+          <td style="color: #e5a4ca;">:</td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="pwd" style="color: #e5a4ca;">Password</label></td>
+          <td style="color: #e5a4ca;">:</td>
+          <td><input type="password" id="pwd" name="pwd" required></td>
+        </tr>
+        <tr>
+          <td><label for="re-pwd" style="color: #e5a4ca;">Re-Password</label></td>
+          <td style="color: #e5a4ca;">:</td>
+          <td><input type="password" id="re-pwd" name="re-pwd" required></td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <br>
+      <input type="radio" id="male" name="gender" value="Male" required>
+      <label for="male" style="color: #e5a4ca;">Male</label>
+      <br>
+      <input type="radio" id="female" name="gender" value="Female" required>
+      <label for="female" style="color: #e5a4ca;">Female</label>
+      <br>
+      <br>
+      <input type="checkbox" id="fav_language1" name="fav_language1" value="HTML">
+      <label for="fav_language1" style="color: #e5a4ca;">HTML</label>
+      <br>
+      <input type="checkbox" id="fav_language2" name="fav_language2" value="CSS">
+      <label for="fav_language2" style="color: #e5a4ca;">CSS</label>
+      <br>
+      <input type="checkbox" id="fav_language3" name="fav_language3" value="JS">
+      <label for="fav_language3" style="color: #e5a4ca;">JS</label>
+      <br>
+      <br>
+      <select name="cars" required>
+        <optgroup label="Swedish Cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="Chinese Cars">
+          <option value="volvo">Haval</option>
+          <option value="saab">Chery</option>
+        </optgroup>
+        <optgroup label="German Cars" disabled>
+          <option value="mercedes" disabled>Mercedes</option>
+          <option value="audi" disabled>Audi</option>
+        </optgroup>
+      </select>
+      <br>
+      <input type="image" src="./Images/submit button.jpg" alt="submit-button" width="70">
+    </fieldset>
+  </form>
+</body>
+
+</html>
